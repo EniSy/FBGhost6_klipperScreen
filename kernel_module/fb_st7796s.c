@@ -94,7 +94,7 @@
 #define ST7796S_SPIRC      0xFB // SPI Read Control
 
 #define TFT_NO_ROTATION           (ST7796S_MADCTL_MV)
-#define TFT_ROTATE_90             (ST7796S_MADCTL_MX)
+#define TFT_ROTATE_90             (ST7796S_MADCTL_MV)
 #define TFT_ROTATE_180            (ST7796S_MADCTL_MV | ST7796S_MADCTL_MX | ST7796S_MADCTL_MY)
 #define TFT_ROTATE_270            (ST7796S_MADCTL_MY)
 
