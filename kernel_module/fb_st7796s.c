@@ -122,12 +122,12 @@ static int init_display(struct fbtft_par *par)
 	switch (par->pdata->rotate)
 	{
 	case 90:
-		pr_info("ST7796 Set rotation 90");
+		pr_info("ST7796 Set rotation 270");
 		madctrl_data = TFT_ROTATE_270;
 		break;
 
 	case 180:
-		pr_info("ST7796 Set rotation 180");
+		pr_info("ST7796 Set rotation 270");
 		madctrl_data = TFT_ROTATE_270;
 		break;
 
@@ -137,7 +137,7 @@ static int init_display(struct fbtft_par *par)
 		break;
 
 	default:
-		pr_info("ST7796 Set rotation 0");
+		pr_info("ST7796 Set rotation 270");
 		madctrl_data = TFT_ROTATE_270;
 		break;
 	}
